@@ -1,100 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel · Game Developer & Programmer</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel | Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <!-- Fondo animado -->
+  <div class="animated-bg"></div>
 
-    <!-- NAV -->
-    <nav class="navbar">
-        <div class="logo">Gabriel</div>
-        <ul class="nav-links">
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+  <!-- Navbar con selector de idioma -->
+  <nav class="navbar">
+    <div class="logo">Gabriel</div>
+    <ul class="nav-links">
+      <li><a href="#hero" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
 
-    <!-- HERO -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title">Hola, soy <span>Gabriel</span></h1>
-            <p class="hero-subtitle">
-                Game Developer & Programmer — Unity · Unreal · C# · Blueprints
-            </p>
-            <a href="#projects" class="btn-primary">Ver mis proyectos</a>
-        </div>
+    <select id="langSwitcher">
+      <option value="es">ES</option>
+      <option value="en">EN</option>
+    </select>
+  </nav>
 
-        <div class="hero-image">
-            <!-- ⭐ COLOCA AQUÍ TU FOTO ⭐ -->
-            <!-- Reemplaza "tu-foto.jpg" por el nombre del archivo -->
-            <img src="tu-foto.jpg" alt="Gabriel" class="profile-pic" />
-        </div>
-    </section>
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title" data-i18n="hero.title">Hola, soy Gabriel</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Desarrollador de videojuegos & Programador</p>
+      <a href="#projects" class="btn-primary" data-i18n="hero.button">Mis proyectos</a>
+    </div>
+    <div class="hero-image">
+      <img src="tu-foto.jpg" alt="Gabriel" class="profile-pic" />
+    </div>
+  </section>
 
-    <!-- SOBRE MI -->
-    <section id="about" class="section">
-        <h2 class="section-title">Sobre mí</h2>
-        <p class="section-text">
-            Soy Gabriel, desarrollador de videojuegos y programador especializado en
-            <b>Unity, Unreal Engine 5, C#, Blueprints, HTML y CSS</b>.
-            Me apasiona crear experiencias interactivas y sistemas complejos que den vida a mundos virtuales.
-        </p>
-    </section>
+  <!-- SOBRE MÍ -->
+  <section id="about" class="section">
+    <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
+    <p class="section-text" data-i18n="about.text">
+      Soy Gabriel, un desarrollador de videojuegos con experiencia en Unity, Unreal Engine 5, C#, Blueprints,
+      HTML y CSS. Me encanta crear mundos interactivos y mecánicas innovadoras.
+    </p>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section dark">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">Unity</div>
-            <div class="skill">Unreal Engine 5 (Blueprints / C++)</div>
-            <div class="skill">C#</div>
-            <div class="skill">Blueprints</div>
-            <div class="skill">HTML & CSS</div>
-            <div class="skill">Ofimática</div>
-            <div class="skill">Desarrollo de Videojuegos</div>
-        </div>
-    </section>
+  <!-- SKILLS -->
+  <section id="skills" class="section dark">
+    <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Unity</div>
+      <div class="skill">Unreal Engine 5</div>
+      <div class="skill">C#</div>
+      <div class="skill">Blueprints</div>
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">Ofimática</div>
+      <div class="skill">Desarrollo de videojuegos</div>
+    </div>
+  </section>
 
-    <!-- PROYECTOS -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Proyectos</h2>
+  <!-- PROYECTOS -->
+  <section id="projects" class="section">
+    <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
+    <div class="projects-container">
+      <a href="https://gabriel-pg188.itch.io" target="_blank" class="project-card">
+        <h3 data-i18n="projects.itchio">Itchio</h3>
+        <p data-i18n="projects.itchioDesc">Juegos que he desarrollado y prototipos.</p>
+      </a>
+      <a href="https://github.com/GpforcePG" target="_blank" class="project-card">
+        <h3>GitHub</h3>
+        <p data-i18n="projects.githubDesc">Repositorios con mis proyectos y código.</p>
+      </a>
+    </div>
+  </section>
 
-        <div class="projects-container">
+  <!-- CONTACTO -->
+  <section id="contact" class="section dark">
+    <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+    <div class="contact-box">
+      <p><b data-i18n="contact.emailLabel">Email:</b> gpg@gmail.com</p>
+    </div>
+  </section>
 
-            <a href="https://gabriel-pg188.itch.io" target="_blank" class="project-card">
-                <h3>Mis juegos en Itchio</h3>
-                <p>Haz clic para ver mis proyectos jugables.</p>
-            </a>
+  <footer>
+    <p>© Gabriel 2025</p>
+  </footer>
 
-            <a href="https://github.com/GpforcePG" target="_blank" class="project-card">
-                <h3>Mis repositorios de GitHub</h3>
-                <p>Código fuente y proyectos en desarrollo.</p>
-            </a>
+  <!-- Script para cambiar idioma -->
+  <script>
+    const translations = {
+      en: {
+        "nav.home": "Home",
+        "nav.about": "About",
+        "nav.skills": "Skills",
+        "nav.projects": "Projects",
+        "nav.contact": "Contact",
+        "hero.title": "Hello, I'm Gabriel",
+        "hero.subtitle": "Game Developer & Programmer",
+        "hero.button": "See my projects",
+        "about.title": "About me",
+        "about.text": "I'm Gabriel, a game developer experienced in Unity, Unreal Engine 5, C#, Blueprints, HTML and CSS. I love creating interactive worlds and innovative mechanics.",
+        "skills.title": "My Skills",
+        "projects.title": "Projects",
+        "projects.itchio": "Itchio Games",
+        "projects.itchioDesc": "Games I have developed and prototypes.",
+        "projects.githubDesc": "Repositories with my code and projects.",
+        "contact.title": "Get in Touch",
+        "contact.emailLabel": "Email"
+      },
+      es: {
+        "nav.home": "Inicio",
+        "nav.about": "Sobre mí",
+        "nav.skills": "Skills",
+        "nav.projects": "Proyectos",
+        "nav.contact": "Contacto",
+        "hero.title": "Hola, soy Gabriel",
+        "hero.subtitle": "Desarrollador de videojuegos & Programador",
+        "hero.button": "Mis proyectos",
+        "about.title": "Sobre mí",
+        "about.text": "Soy Gabriel, un desarrollador de videojuegos con experiencia en Unity, Unreal Engine 5, C#, Blueprints, HTML y CSS. Me encanta crear mundos interactivos y mecánicas innovadoras.",
+        "skills.title": "Mis Habilidades",
+        "projects.title": "Proyectos",
+        "projects.itchio": "Itchio",
+        "projects.itchioDesc": "Juegos que he desarrollado y prototipos.",
+        "projects.githubDesc": "Repositorios con mis proyectos y código.",
+        "contact.title": "Contacto",
+        "contact.emailLabel": "Correo"
+      }
+    };
 
-        </div>
-    </section>
+    const switcher = document.getElementById("langSwitcher");
+    const elements = document.querySelectorAll("[data-i18n]");
 
-    <!-- CONTACTO -->
-    <section id="contact" class="section dark">
-        <h2 class="section-title">Contacto</h2>
+    function updateLanguage(lang) {
+      elements.forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        el.textContent = translations[lang][key];
+      });
+    }
 
-        <p class="section-text">¿Quieres colaborar conmigo? Escríbeme:</p>
+    switcher.addEventListener("change", (e) => {
+      updateLanguage(e.target.value);
+    });
 
-        <div class="contact-box">
-            <p><b>Email:</b> gpg@gmail.com</p>
-        </div>
-    </section>
-
-    <footer>
-        © 2025 Gabriel · Game Developer
-    </footer>
+    // Iniciar con español
+    updateLanguage("es");
+  </script>
 
 </body>
 </html>
