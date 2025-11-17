@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111;
+    border-bottom: 2px solid #222;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #6cf;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #6cf;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to bottom, #000, #111);
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #6cf;
+}
+
+.section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skills-list span {
+    padding: 10px 20px;
+    background: #222;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #121212;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #6cf;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #222;
+    margin-top: 40px;
+    background: #111;
+}
